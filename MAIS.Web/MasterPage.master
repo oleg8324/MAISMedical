@@ -1,0 +1,189 @@
+﻿<%@ Master Language="VB" Inherits="MAIS.Web.MasterPage" CodeBehind="MasterPage.master.vb" %>
+
+<%@ Register Src="UserControls/ProgressBar.ascx" TagName="ProgressBar" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+    <title>Medication Administration</title>
+    <link rel="Stylesheet" type="text/css" href="App_Themes/CW_Style/Main.css" />
+    <link rel="Stylesheet" type="text/css" href="Scripts/jquery/jquery.calendars.picker.css" />    
+    <script type="text/javascript" src="Scripts/jquery/jquery.1.6.2.min.js"></script> 
+    <script type="text/javascript" src="Scripts/jquery/jquery.calendars.pack.js"></script>
+    <script type="text/javascript" src="Scripts/jquery/jquery.calendars.plus.pack.js"></script>
+    <script type="text/javascript" src="Scripts/jquery/jquery.calendars.picker.pack.js"></script>    
+    <script type="text/javascript" src="Scripts/jquery/jquery.validate.js"></script>
+      <script type="text/javascript" src="Scripts/jquery/jquery.maskedinput-1.3.min.js"></script>
+    <script type="text/javascript" src="Scripts/MAISCommon.js"></script>  
+    <script type="text/javascript" src="Scripts/MasterPage.js"></script> 
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>  
+    <style type="text/css">
+        .style12
+        {
+            border-bottom: 1px solid Black;
+            white-space: normal;
+            background-color: #FFFFFF;
+            width: 850px;
+            height: 57px;
+        }
+        .style13
+        {
+            width: 100%;
+        }
+        .error
+        {
+            padding: 0px;
+            margin: 5px;
+            font-size: small;
+            text-align: left;
+            color: #bb0000;
+            border: 2px solid #cc0000;
+        }
+        .alert
+        {
+            padding: 0px;
+            margin: 5px;
+            font-size: small;
+            text-align: left;
+            border: 2px solid #ff9900;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="PortalOverrideContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="FormFormat">
+    <form id="form1" runat="server">   
+    <center>
+        <table width="850" class="FormFormat" cellpadding="0" cellspacing="0">
+            <tr id="trLogo" class="HeaderRow" runat="server">
+                <td class="TableHeaderStyle">
+                    <div style="text-align: left; font-size: 10pt; font-family: Arial, Verdana">
+                        <br />
+                        <img src="Images/CertWizardHeader.jpg" alt="Ohio DODD - MAIS" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="CountySelection">
+                  <asp:Panel ID ="pnlOther" runat ="server">
+                   <asp:LinkButton ID="lbtnHome" runat="server" CssClass="floatright">Home</asp:LinkButton>
+                                        
+                        <div id="menu" class="floatleft">
+                            <ul class="menu" id ="menu2" runat ="server">
+                                <li><a href="#" class="parent"><span>Certification & Registration</span></a>
+                                    <ul>
+                                        <li><a runat="server" id="lnkCertifyRegister"><span>Search For A Person</span></a></li>                                                     
+                                        <li><a runat="server" id="lnkManageCourses"><span>Manage Courses</span></a></li>    
+                                        <li><a runat ="server" id="lnkSecretary"><span>Secretary Association</span></a></li>     
+                                        <li><a runat ="server" id="lnkRNMapping"><span>RN Unmapping/Mapping</span></a></li>                                       
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul id ="ulProfile" runat ="server">
+                                <li><a href="#" class="parent"><span>Update My Profile</span></a>
+                                    <ul>
+                                        <li><a runat="server" id="lnkUpdateMyProfile"><span>Update My Profile</span></a></li>                         
+                                    </ul>
+                                </li>
+                            </ul>
+                             <ul class="menu" runat ="server" id ="menu1">
+                                <li><a href="#" class="parent"><span>MAIS Administration</span></a>
+                                    <ul>
+                                        <%--<li><a runat="server" id="lnkCertificateModification"><span>Certificate Modification</span></a></li>--%>
+                                        <%--<li><a runat ="server" id = "lnkEditCourse"><span>Edit Course or Training Session</span></a></li>--%>
+                                        <%--<li><a runat="server" id= "lnkAlerts"><span>Certification Alerts</span></a></li>--%>
+                                        <li><a runat = "server" id="lnkMessages"><span>DODD Messages</span></a></li>       
+                                        <li><a runat ="server" id="lnkOldMASystem" ><span>Old MA System</span></a></li>
+                                        <li><a runat="server" id="lnkManageCourseAdmin"><span>Manage Courses Admin</span></a></li>                                                                       
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="menu">
+                                <li><a href="#" class="parent"><span>Reports</span></a>
+                                    <ul>
+                                        <li><a runat="server" id="lnkReports"><span>MAIS Reports</span></a></li>
+                                        <li><a runat="server" id="lnkApplicationHistoryReport"><span>Application History Reports</span></a></li>                                                                                                               
+                                    </ul>
+                                </li>
+                            </ul>
+                             <ul class="menu">
+                                <li><a href="#" class="parent"><span>Other Pages</span></a>
+                                    <ul>
+                                        <li><a runat="server" id="lnkViewPrintDocuments"><span>View/Print Documents</span></a></li> 
+                                        <li><a runat="server" id="lnkResource"><span>MAIS Resource Page</span></a></li>                                                                                               
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        </asp:Panel>                      
+                </td>
+            </tr>
+            <tr id="MiddleRow">
+                <td>
+                    <center style="height: 50px">
+                        <asp:Panel ID="pnlNew" runat="server" Height="20px">
+                            <asp:Label ID="lblLoginLabel" runat="server" Visible="True">LoginUser: </asp:Label>
+                             <asp:Label ID="lblLoginUser" runat="server" ForeColor="#006600" Visible="True"></asp:Label>&nbsp;
+                            <asp:Label ID="lblNameLabel" runat="server" Visible="True">Name: </asp:Label>
+                            <asp:Label ID="lblName" runat="server" ForeColor="#006600" Visible="True">Thomas,Greg</asp:Label>&nbsp;
+                            <asp:Label ID="lblRNLicenseLabel" runat="server" Visible="True">RNLicense# or DDPersonnelCode: </asp:Label>
+                            <asp:Label ID="lblRNDDCode" runat="server" ForeColor="#006600" Visible="True"></asp:Label>&nbsp;
+                            <br /> 
+                            <asp:Label ID="lblApplicationIDLabel" runat="server" Visible="True">Application ID: </asp:Label>
+                            <asp:Label ID="lblApplicationID" runat="server" ForeColor="#006600" Visible="True"></asp:Label>
+                            <asp:Label ID="lblApptypeLabel" runat="server" Visible="True">Application Type: </asp:Label>
+                            <asp:Label ID="lblApptype" runat="server" ForeColor="#006600" Visible="True"></asp:Label>
+                        </asp:Panel>
+                    </center>
+                </td>
+            </tr>
+            <tr id ="trlabel">
+                <td>
+                    <center>
+                            <asp:Label ID="lblNotation" runat="server" ForeColor="Red" Font-Bold="True" Font-Size="Medium" Visible ="false">Notation : You have three or more notations</asp:Label>
+                    </center>
+                </td>
+            </tr>
+            <tr id="ProgressBar">
+                <td>
+                    <asp:Panel ID="pnlProgressBar" runat="server">
+                        <uc1:ProgressBar ID="progBar" runat="server" />
+                    </asp:Panel>
+                </td>
+            </tr>
+            <tr id="Error_Message" runat="server">
+                <td>
+                    <div id="div_MessagesContent" runat="server" class="error">
+                    </div>
+                </td>
+            </tr>
+            <tr class="FormFormat">
+                <td valign="top" style="width: 850px" class="TableMiddle">
+                    <!-- Content goes here -->
+                    <asp:ContentPlaceHolder ID="mainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <!-- Content goes here -->
+                </td>
+            </tr>
+            <tr id="BottomRow">
+                <td class="TableBottom" valign="bottom">
+                    <asp:Panel ID="pnlFooter" runat="server" HorizontalAlign="Right">
+                     
+                        <div id="divTestAppID" runat="server" visible="false">
+                        <asp:TextBox ID="txtAppIDChange" runat="server"></asp:TextBox><asp:Button ID="bntChangeAppID" runat="server" Text="Change AppID for Testing" />
+                          
+                </div>
+                    </asp:Panel>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <div id="Widecontent">
+            <asp:ContentPlaceHolder ID="WideContentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </center>
+    </form>
+</body>
+</html>

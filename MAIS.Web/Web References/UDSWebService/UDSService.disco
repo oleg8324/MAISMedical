@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://uds.devlds.mrdd1.ad.mr.state.oh.us/UDSService.asmx?wsdl" docRef="http://uds.devlds.mrdd1.ad.mr.state.oh.us/UDSService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://uds.devlds.mrdd1.ad.mr.state.oh.us/UDSService.asmx" xmlns:q1="http://uds.devlapps2.mrdd1.ad.mr.state.oh.us/uds_services" binding="q1:UDSServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://uds.devlds.mrdd1.ad.mr.state.oh.us/UDSService.asmx" xmlns:q2="http://uds.devlapps2.mrdd1.ad.mr.state.oh.us/uds_services" binding="q2:UDSServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

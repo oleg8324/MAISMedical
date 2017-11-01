@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d23d11560a1b40a58c815f8f5afc22cb" Name="Diagram1">
+        <EntityTypeShape EntityType="MAISModel.Address_Type" Width="1.5" PointX="22.5" PointY="45.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Application_Status_Type" Width="1.5" PointX="9" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Application_Type" Width="1.5" PointX="9" PointY="66.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Attestation" Width="1.5" PointX="9" PointY="77" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Category_Type" Width="1.5" PointX="0.75" PointY="55.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Certification_Status_Type" Width="1.5" PointX="13.5" PointY="39.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Contact_Type" Width="1.5" PointX="14.25" PointY="62.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Document_Type" Width="1.5" PointX="17.25" PointY="65.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Employer_Type" Width="1.5" PointX="17.25" PointY="72.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Identification_Type" Width="1.5" PointX="17.25" PointY="76.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Level_Type" Width="1.5" PointX="0.75" PointY="48.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.MAIS_Role" Width="1.5" PointX="0.75" PointY="60.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Notation_Type" Width="1.5" PointX="3" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Person_Type" Width="1.5" PointX="0.75" PointY="42.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Reasons_For_Notation" Width="1.5" PointX="5.25" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Skill_CheckList" Width="1.5" PointX="11.25" PointY="37.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Skill_Type" Width="1.5" PointX="6" PointY="40.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Application_History_Status" Width="1.5" PointX="10.5" PointY="42" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Attestation_Application_Type_Role_Xref" Width="1.5" PointX="11.25" PointY="63.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Category_Type_Skill_Type_Xref" Width="1.5" PointX="3" PointY="55.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Certification" Width="1.5" PointX="13.5" PointY="44.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Certification_Requirement_Information" Width="1.5" PointX="8.25" PointY="45.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Certification_Status" Width="1.5" PointX="15.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.DDPersonnel" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Discussion_Forum" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Employer" Width="1.5" PointX="19.5" PointY="76.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Employer_RN_DD_Person_Type_Xref" Width="1.5" PointX="27.75" PointY="52.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Notation_Reason_RN_DD_Xref" Width="1.5" PointX="7.5" PointY="33.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Notation_Reason_Xref" Width="1.5" PointX="10.5" PointY="33.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Person_Course_Session_Xref" Width="1.5" PointX="18.75" PointY="45.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Person_Course_Xref" Width="1.5" PointX="16.5" PointY="45.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.RN" Width="1.5" PointX="9" PointY="71.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.RN_DD_Person_Type_Xref" Width="1.5" PointX="3" PointY="41.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Role_Category_Level_Xref" Width="1.5" PointX="3" PointY="50" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Role_RN_DD_Personnel_Xref" Width="1.5" PointX="11.25" PointY="45.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Skill_Type_Skill_CheckList_Xref" Width="1.5" PointX="18.5" PointY="41.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Skill_Verification" Width="1.5" PointX="3" PointY="60.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Skill_Verification_Skill_Type_Xref" Width="1.5" PointX="5.25" PointY="60.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Skill_Verification_Type_CheckList_Xref" Width="1.5" PointX="7.5" PointY="61.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Application_Course_Session_Xref" Width="1.5" PointX="21.75" PointY="56.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Application_Course_Xref" Width="1.5" PointX="16.5" PointY="56.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Application_Skill_Type_CheckList_Xref" Width="1.5" PointX="13.5" PointY="49.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Application_Skill_Type_Xref" Width="1.5" PointX="8.25" PointY="50.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Application_Skill_Verification" Width="1.5" PointX="6" PointY="50.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.CEUs_Renewal_Application" Width="1.5" PointX="9" PointY="55.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.DDPersonnel_Application" Width="1.5" PointX="13.5" PointY="81.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.Document_Image_Store" Width="1.5" PointX="17.25" PointY="69" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.RN_Application" Width="1.5" PointX="13.5" PointY="85.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAISModel.RN_Application_Work_Experience" Width="1.5" PointX="13.5" PointY="89.75" IsExpanded="true" />
+        <AssociationConnector Association="MAISModel.FK_Application_Status_Type_Application_History_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Application_Type_Attestation_Application_Type_Role_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Application_Type_Certification_Requirement_Information" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Attestation_Attestation_Application_Type_Role_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Category_Type_Application_Skill_Verification" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Category_Type_Category_Type_Skill_Type_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Category_Type_CEUs_Renewal_Application" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Category_Type_Role_Category_Level_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Category_Type_Skill_Verification" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Certification_Status_Type_Certification_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Employer_Type_Employer_RN_DD_Person_Type_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Identification_Type_Employer" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Level_Type_Role_Category_Level_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_MAIS_Role_Attestation_Application_Type_Role_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_MAIS_Role_Role_Category_Level_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Notation_Type_Notation_Reason_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Person_Type_RN_DD_Person_Type_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Reasons_For_Notation_Notation_Reason_RN_DD_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Reasons_For_Notation_Notation_Reason_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Skill_CheckList_Application_Skill_Type_CheckList_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Skill_CheckList_Skill_Type_Skill_CheckList_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Skill_CheckList_Skill_Verification_Type_CheckList_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Skill_Type_Application_Skill_Type_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Skill_Type_Category_Type_Skill_Type_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Skill_Type_Skill_Type_Skill_CheckList_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Skill_Type_Skill_Verification_Skill_Type_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Certification_Certification_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_RN_Certification" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Role_RN_DD_Personnel_Xref_Certification" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Current_Role_Category_Level_Xref_Certification_Requirement_Information" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Role_Category_Level_Xref_Certification_Requirement_Information" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Employer_Employer_RN_DD_Person_Type_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_RN_DD_Person_Type_Xref_Employer_RN_DD_Person_Type_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Person_Course_Xref_Person_Course_Session_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Role_RN_DD_Personnel_Xref_Person_Course_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_RN_CEUs_Renewal_Application" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_RN_DD_Person_Type_Xref_Role_RN_DD_Personnel_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_RN_DD_Person_Type_Xref_Skill_Verification" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Role_Category_Level_Xref_Role_RN_DD_Personnel_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Skill_Verification_Skill_Verification_Skill_Type_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Skill_Verification_Skill_Type_Xref_Skill_Verification_Type_CheckList_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Application_Course_Xref_Application_Course_Session_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Application_Skill_Type_Xref_Application_Skill_Type_CheckList_Xref" ManuallyRouted="false" />
+        <AssociationConnector Association="MAISModel.FK_Application_Skill_Verification_Application_Skill_Type_Xref" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="MAISModel.Errors_Log" Width="1.5" PointX="7.4584404097210806" PointY="26.803592172825518" />
+        <EntityTypeShape EntityType="MAISModel.Session" Width="1.5" PointX="4.7894178651223971" PointY="5.8753186938703612" />
+        <EntityTypeShape EntityType="MAISModel.Session_Information" Width="1.5" PointX="3.143983451250933" PointY="5.8722509769127944" />
+        <AssociationConnector Association="MAISModel.FK_Session_Person_Course_Session_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Session_Application_Course_Session_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Session_Session_Information" />
+        <EntityTypeShape EntityType="MAISModel.CEUs_Renewal" Width="1.5" PointX="8.8243476063126458" PointY="30.01020201948015" />
+        <AssociationConnector Association="MAISModel.FK_Category_Type_CEUs_Renewal" />
+        <AssociationConnector Association="MAISModel.FK_RN_CEUs_Renewal" />
+        <AssociationConnector Association="MAISModel.FK_RN_DD_Person_Type_Xref_CEUs_Renewal" />
+        <EntityTypeShape EntityType="MAISModel.Application_Attestation" Width="1.5" PointX="10.125" PointY="4" />
+        <AssociationConnector Association="MAISModel.FK_Attestation_Application_Attestation" />
+        <EntityTypeShape EntityType="MAISModel.Course" Width="1.5" PointX="8.9470832613050391" PointY="29.538490145252315" />
+        <EntityTypeShape EntityType="MAISModel.RN_Work_Experience" Width="1.5" PointX="9.1833146462139279" PointY="3.4909053908153" />
+        <EntityTypeShape EntityType="MAISModel.User_RN_Mapping" Width="1.5" PointX="7.6076924165746629" PointY="7.369377184365586" />
+        <AssociationConnector Association="MAISModel.FK_Course_Application_Course_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Course_Person_Course_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Course_Session" />
+        <AssociationConnector Association="MAISModel.FK_RN_Course" />
+        <AssociationConnector Association="MAISModel.FK_RN_DD_Person_Type_Xref_RN_Work_Experience" />
+        <EntityTypeShape EntityType="MAISModel.RN_Secretary_Association" Width="1.5" PointX="1.4581947668726532" PointY="22.805820937643677" />
+        <AssociationConnector Association="MAISModel.FK_RN_RN_Secretary_Association" />
+        <EntityTypeShape EntityType="MAISModel.Application" Width="1.5" PointX="13.5" PointY="15.875" />
+        <AssociationConnector Association="MAISModel.FK_Application_Status_Type_Application" />
+        <AssociationConnector Association="MAISModel.FK_Application_Type_Application" />
+        <AssociationConnector Association="MAISModel.FK_RN_Application" />
+        <AssociationConnector Association="MAISModel.FK_Role_Category_Level_Xref_Application" />
+        <AssociationConnector Association="MAISModel.FK_Application_Application_Attestation" />
+        <AssociationConnector Association="MAISModel.FK_Application_Application_Course_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Application_Application_Skill_Verification" />
+        <AssociationConnector Association="MAISModel.FK_Application_CEUs_Renewal_Application" />
+        <AssociationConnector Association="MAISModel.FK_Application_RN_Application" />
+        <AssociationConnector Association="MAISModel.Fk_Application_RN_Application_Work_Experience" />
+        <AssociationConnector Association="MAISModel.FK_DDPersonnel_Application_Application" />
+        <EntityTypeShape EntityType="MAISModel.Notation" Width="1.5" PointX="9.6166791625398584" PointY="5.6331740047937142" />
+        <AssociationConnector Association="MAISModel.FK_Notaion_Type_Notation" />
+        <AssociationConnector Association="MAISModel.FK_Notation_Notation_Reason_RN_DD_Xref" />
+        <AssociationConnector Association="MAISModel.FK_RN_DD_Person_Type_Xref_Notation" />
+        <EntityTypeShape EntityType="MAISModel.Address1" Width="1.5" PointX="5.2519020295012293" PointY="2.3029340218300622" />
+        <EntityTypeShape EntityType="MAISModel.Address_Information" Width="1.5" PointX="1.753475597944798" PointY="29.434550433156335" />
+        <EntityTypeShape EntityType="MAISModel.City_Information" Width="1.5" PointX="5.6199029449466167" PointY="26.477903378418603" />
+        <EntityTypeShape EntityType="MAISModel.Email1" Width="1.5" PointX="8.18209222153858" PointY="4.4926506301819584" />
+        <EntityTypeShape EntityType="MAISModel.Phone_Number" Width="1.5" PointX="9.0869526607389339" PointY="4.686454596317585" />
+        <AssociationConnector Association="MAISModel.FK_Address_Address_Information" />
+        <AssociationConnector Association="MAISModel.FK_Address_City_Information" />
+        <EntityTypeShape EntityType="MAISModel.Application_Employer" Width="1.5" PointX="11.036671466676831" PointY="11.433828746636319" />
+        <AssociationConnector Association="MAISModel.FK_Employer_Type_Application_Employer" />
+        <AssociationConnector Association="MAISModel.FK_Identification_Type_Application_Employer" />
+        <AssociationConnector Association="MAISModel.FK_Application_Application_Employer" />
+        <EntityTypeShape EntityType="MAISModel.Application_Address_Xref" Width="1.5" PointX="5.3958421337398894" PointY="11.985515838482192" />
+        <EntityTypeShape EntityType="MAISModel.Application_Email_Xref" Width="1.5" PointX="5.9525135485234273" PointY="29.8876334716974" />
+        <EntityTypeShape EntityType="MAISModel.Application_Phone_Xref" Width="1.5" PointX="9.9701536642248527" PointY="0.35050852613081623" />
+        <AssociationConnector Association="MAISModel.FK_Address_Type_Application_Address_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Contact_Type_Application_Email_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Contact_Type_Application_Phone_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Application_Application_Address_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Application_Application_Email_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Application_Application_Phone_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Shared_Address_Application_Address_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Shared_Email_Application_Email_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Phone_Application_Phone_Xref" />
+        <EntityTypeShape EntityType="MAISModel.Application_Employer_Address_Xref" Width="1.5" PointX="6.2078317674844667" PointY="10.755227913500381" />
+        <EntityTypeShape EntityType="MAISModel.Application_Employer_Email_Xref" Width="1.5" PointX="5.112561120238416" PointY="1.2427968835657448" />
+        <EntityTypeShape EntityType="MAISModel.Application_Employer_Phone_Xref" Width="1.5" PointX="4.3512840067740921" PointY="23.459599073724636" />
+        <AssociationConnector Association="MAISModel.FK_Address_Type_Application_Employer_Address_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Contact_Type_Application_Employer_Email_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Contact_Type_Application_Employer_Phone_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Application_Application_Employer_Address_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Application_Application_Employer_Email_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Application_Application_Employer_Phone_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Application_Employer_Application_Employer_Address_Xref" />
+        <AssociationConnector Association="MAISModel.Fk_Application_Employer_Application_Employer_Email_Xref" />
+        <AssociationConnector Association="MAISModel.Fk_Application_Employer_Application_Employer_Phone_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Shared_Address_Application_Employer_Address_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Shared_Email_Application_Employer_Phone_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Shared_Phone_Application_Employer_Phone_Xref" />
+        <EntityTypeShape EntityType="MAISModel.Employer_RN_DD_Person_Type_Address_Xref" Width="1.5" PointX="8.4751484563924127" PointY="21.226754183520914" />
+        <EntityTypeShape EntityType="MAISModel.Employer_RN_DD_Person_Type_Email_Xref" Width="1.5" PointX="11.75" PointY="7.375" />
+        <EntityTypeShape EntityType="MAISModel.Employer_RN_DD_Person_Type_Phone_Xref" Width="1.5" PointX="7.0044693253023862" PointY="27.252646235401112" />
+        <EntityTypeShape EntityType="MAISModel.RN_DD_Person_Type_Address_Xref" Width="1.5" PointX="7.1555514033676824" PointY="4.9446281366723719" />
+        <EntityTypeShape EntityType="MAISModel.RN_DD_Person_Type_Email_Xref" Width="1.5" PointX="4.8411571853054483" PointY="6.58898160168388" />
+        <EntityTypeShape EntityType="MAISModel.RN_DD_Person_Type_Phone_Xref" Width="1.5" PointX="0.14861645742720758" PointY="17.949912452115637" />
+        <AssociationConnector Association="MAISModel.FK_Address_Type_Employer_RN_DD_Person_Type_Address_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Address_Type_RN_DD_Person_Type_Address_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Contact_Type_Employer_RN_DD_Person_Type_Email_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Contact_Type_Employer_RN_DD_Person_Type_Phone_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Contact_Type_RN_DD_Person_Type_Email_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Contact_Type_RN_DD_Person_Type_Phone_Xref" />
+        <AssociationConnector Association="MAISModel.FK__Employer_Employer_RN_DD_Person_Type_Address_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Employer_Employer_RN_DD_Person_Type_Email_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Employer_Employer_RN_DD_Person_Type_Phone_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Address_Employer_RN_DD_Person_Type_Address_Xref" />
+        <AssociationConnector Association="MAISModel.FK_RN_DD_Person_Type_Xref_Employer_RN_DD_Person_Type_Address_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Email_Employer_RN_DD_Person_Type_Email_Xref" />
+        <AssociationConnector Association="MAISModel.FK_RN_DD_Person_Type_Xref_Employer_RN_DD_Person_Type_Email_Xref" />
+        <AssociationConnector Association="MAISModel.FK_RN_DD_Person_Type_Xref_Employer_RN_DD_Person_Type_Phone_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Address_RN_DD_Person_Type_Address_Xref" />
+        <AssociationConnector Association="MAISModel.FK_RN_DD_Person_Type_Xref_RN_DD_Person_Type_Address_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Email_RN_DD_Person_Type_Email_Xref" />
+        <AssociationConnector Association="MAISModel.FK_RN_DD_Person_Type_Xref_RN_DD_Person_Type_Email_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Phone_RN_DD_Person_Type_Phone_Xref" />
+        <AssociationConnector Association="MAISModel.FK_RN_DD_Person_Type_Xref_RN_DD_Person_Type_Phone_Xref" />
+        <EntityTypeShape EntityType="MAISModel.User_Mapping" Width="1.5" PointX="6.701249842858525" PointY="20.854436884100753" />
+        <AssociationConnector Association="MAISModel.Fk_User_Mapping_RN_Secretary_Association" />
+        <AssociationConnector Association="MAISModel.FK_Email_User_Mapping" />
+        <AssociationConnector Association="MAISModel.FK_User_Mapping_User_RN_Mapping" />
+        <EntityTypeShape EntityType="MAISModel.Session_Address_Xref" Width="1.5" PointX="2.3620949305417458" PointY="0.17272168405946423" />
+        <AssociationConnector Association="MAISModel.FK_Address_Type_Session_Address_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Session_Session_Address_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Address_Session_Address_Xref" />
+        <EntityTypeShape EntityType="MAISModel.RN_Work_Experience_Address_Xref" Width="1.5" PointX="5.8962002796568909" PointY="22.899092222982596" />
+        <EntityTypeShape EntityType="MAISModel.RN_Work_Experience_Email_Xref" Width="1.5" PointX="7.8615944124113737" PointY="18.570730307405224" />
+        <EntityTypeShape EntityType="MAISModel.RN_Work_Experience_Phone_Xref" Width="1.5" PointX="8.34600486436207" PointY="18.157177218309222" />
+        <EntityTypeShape EntityType="MAISModel.RN_Application_Work_Experience_Address_Xref" Width="1.5" PointX="0.667095652160745" PointY="21.701711530658283" />
+        <EntityTypeShape EntityType="MAISModel.RN_Application_Work_Experience_Phone_Xref" Width="1.5" PointX="1.2527783761046725" PointY="16.101299069869004" />
+        <AssociationConnector Association="MAISModel.FK_Address_Type_RN_Work_Experience_Address_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Contact_type_RN_Application_Work_Experience_Phone_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Contact_Type_RN_Work_Experience_Email_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Contact_Type_RN_Work_Experience_Phone_Xref" />
+        <AssociationConnector Association="MAISModel.FK_RN_Work_Experience_RN_Work_Experience_Address_Xref" />
+        <AssociationConnector Association="MAISModel.FK_RN_Work_Experience_RN_Work_Experience_Email_Xref" />
+        <AssociationConnector Association="MAISModel.FK_RN_Work_Experience_RN_Work_Experience_Phone_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Address_RN_Work_Experience_Address_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Email_RN_Work_Experience_Email_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Phone_RN_Work_Experience_Phone_Xref" />
+        <AssociationConnector Association="MAISModel.FK_RN_Application_Work_Experience_RN_Application_Work_Experience_Phone_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Application_Phone_RN_Application_Work_Experience_Phone_Xref" />
+        <EntityTypeShape EntityType="MAISModel.RN_Application_Work_Experience_Email_Xref" Width="1.5" PointX="4.2124208883440222" PointY="4.740678491415772" />
+        <AssociationConnector Association="MAISModel.FK_Contact_Type_RN_Application_Work_Experience_Email_Xref" />
+        <AssociationConnector Association="MAISModel.FK_RN_Application_Work_Experience_RN_Application_Work_Experience_Email_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Application_Email_RN_Application_Work_Experience_Email_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Address_Type_RN_Application_Work_Experience_Address_Xref" />
+        <AssociationConnector Association="MAISModel.FK_RN_Application_Work_Experience_RN_Application_Work_Experience_Address_Xref" />
+        <AssociationConnector Association="MAISModel.FK_Shared_Address_RN_Application_Work_Experience_Address_Xref" />
+        <EntityTypeShape EntityType="MAISModel.County" Width="1.5" PointX="10.727686128917934" PointY="11.408686032243393" />
+        <AssociationConnector Association="MAISModel.FK_City_Information_County_Code" />
+        <EntityTypeShape EntityType="MAISModel.State" Width="1.5" PointX="2.4683993172219019" PointY="9.68001169417054" />
+        <AssociationConnector Association="MAISModel.FK_City_Information_State" />
+        <AssociationConnector Association="MAISModel.FK_Phone_Employer_RN_DD_Person_Type_Phone_Xref" />
+        <EntityTypeShape EntityType="MAISModel.History_Employers" Width="1.5" PointX="6.2132815244669466" PointY="26.336542290792121" />
+        <EntityTypeShape EntityType="MAISModel.History_Employment" Width="1.5" PointX="7.411039601737186" PointY="19.834872106013293" />
+        <EntityTypeShape EntityType="MAISModel.History_Supervisor" Width="1.5" PointX="0.013805905363432087" PointY="7.0596597972603794" />
+        <EntityTypeShape EntityType="MAISModel.History_Work_Address" Width="1.5" PointX="5.6373566154564525" PointY="20.009990194817068" />
+        <AssociationConnector Association="MAISModel.FK_History_Employment_History_Employers" />
+        <AssociationConnector Association="MAISModel.FK_History_Employment_History_Supervisor" />
+        <AssociationConnector Association="MAISModel.FK_History_Employment_History_Work_Address" />
+        <AssociationConnector Association="MAISModel.FK_History_Employment_RN_DD_Person_Type_Xref" />
+        <EntityTypeShape EntityType="MAISModel.Application_History" Width="1.5" PointX="4.5568723159641369" PointY="13.824829167604833" />
+        <AssociationConnector Association="MAISModel.FK_Application_Type_Application_History" />
+        <AssociationConnector Association="MAISModel.FK_Application_History_Application_History_Status" />
+        <AssociationConnector Association="MAISModel.FK_RN_DD_Person_Type_Xref_Application_History" />
+        <AssociationConnector Association="MAISModel.FK_Role_Category_Level_Xref_Application_History" />
+        <EntityTypeShape EntityType="MAISModel.DODD_Message" Width="1.5" PointX="5.48821870865683" PointY="1.6790702052782616" />
+        <EntityTypeShape EntityType="MAISModel.DODD_Message_MAIS_Role_XRef" Width="1.5" PointX="9.95387999245612" PointY="10.366210852920176" />
+        <EntityTypeShape EntityType="MAISModel.DODD_Message_RN_DD_Person_Type_Xref_Xref" Width="1.5" PointX="9.4433156165496044" PointY="31.101446017204527" />
+        <AssociationConnector Association="MAISModel.FK_DODD_Message_MAIS_Role_XRef_MAIS_Role" />
+        <AssociationConnector Association="MAISModel.FK_DODD_Message_MAIS_Role_XRef_DODD_Message" />
+        <AssociationConnector Association="MAISModel.FK_DODD_Message_RN_DD_Person_Type_Xref_Xref_DODD_Message" />
+        <AssociationConnector Association="MAISModel.FK_DODD_Message_RN_DD_Person_Type_Xref_Xref_RN_DD_Person_Type_Xref" />
+        <EntityTypeShape EntityType="MAISModel.Application_Uploaded_Document" Width="1.5" PointX="4.6421512517343047" PointY="6.7912617059383829" />
+        <AssociationConnector Association="MAISModel.FK_Document_Type_Application_Uploaded_Document" />
+        <AssociationConnector Association="MAISModel.FK_Application_Application_Uploaded_Document" />
+        <AssociationConnector Association="MAISModel.FK_Document_Image_Store_Application_Uploaded_Document" />
+        <EntityTypeShape EntityType="MAISModel.Renewal_History_Count" Width="1.5" PointX="6.0499509545275707" PointY="23.04321275234372" />
+        <AssociationConnector Association="MAISModel.FK_Application_Type_Renewal_History_Count" />
+        <AssociationConnector Association="MAISModel.FK_RN_DD_Person_Type_Xref_Renewal_History_Count" />
+        <AssociationConnector Association="MAISModel.FK_Role_Category_Level_Xref_Renewal_History_Count" />
+        <EntityTypeShape EntityType="MAISModel.Resource" Width="1.5" PointX="10.465188860178548" PointY="21.339639807743783" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

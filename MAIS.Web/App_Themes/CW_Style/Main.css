@@ -1,0 +1,538 @@
+﻿.Border
+{
+    white-space:normal;
+    margin:0 0 0 0px;
+    padding:0 0 0 3px;
+    border:solid 1px black;
+}       
+.Error1
+{
+    color:red; 
+    font-size:medium;
+    border-style:none;
+}
+.FormFormat
+{
+    margin:0;
+    padding:0;
+    white-space:normal;
+    font-family:verdana;
+    font-size:10pt;
+    padding:0;
+    margin:0;
+    white-space:normal;
+    font-style: normal;
+}
+.ErrorSummary
+{
+ width: 75%;
+ border: 2px solid red;
+ color: red;
+ margin: 0px 0px;
+ padding: 15px;
+}
+.Note
+{
+    width: 100%;
+    color: green;
+    border: 2px solid green;
+    margin: 0px 0px;
+    padding: 15px;
+}
+.PEnterNotation
+{
+    padding: 0px;
+    margin: 0px;
+}
+.ErrorSummary ul
+{ 
+ margin: 0;
+ padding: 0;
+ list-style: square;
+
+}
+.BorderStyle
+{
+        border-style:solid;
+        border-color:Black;
+        border-width:1px;
+        white-space:normal;
+}
+.BlueColumnHead
+{
+    background-color: #BFE4FF;
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: bold;
+    padding:3px;
+}
+.GridviewBottom
+{
+    border-top-color:Black;
+    border-top-style:solid;
+    border-top-width:1px;
+    text-align:right;
+}
+.TableTD
+{
+    width:140px;
+    height:25px;
+    padding:3px;
+    font-weight:bold;
+    }
+    
+.TableWidth
+{
+    width: 100%;
+    white-space:normal;
+}
+.TableMiddle
+{
+    border-left-color:#BFE4FF;
+    border-left-style:solid;
+    border-left-width:0px;
+    border-right-color:#BFE4FF;
+    border-right-style:solid;
+    border-right-width:0px;
+    white-space:normal;
+    padding:0;
+    margin:0;
+}
+.TableBottom
+{
+    border-top-width:0px;
+    border-top-color:Black;
+    border-top-style:solid;
+    border-left-color:#BFE4FF;
+    border-left-style:solid;
+    border-left-width:0px;
+    border-right-color:#BFE4FF;
+    border-right-style:solid;
+    border-right-width:0px;
+    border-bottom-color:#BFE4FF;
+    border-bottom-style:solid;
+    border-bottom-width:0px;
+    white-space:normal;
+    padding:0;
+    margin:0;
+    background-color:#EFF3FB;
+}
+#Widecontent 
+{
+                width:1000px;
+                text-align:left;
+                
+}
+.InfoTable
+{
+    border-top-color:Black;
+    border-top-width:1px;
+    border-top-style:solid;
+    border-bottom-color:Black;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    white-space:normal;
+    background-color:#EFF3FB;
+}
+.CheckboxStyle
+{
+    font-size: 9pt;
+    font-family: arial;
+}
+.style4
+{
+    width: 163px;
+    height: 126px;
+}
+.CountySelection
+{
+    background-color: #BFE4FF;
+    height: 100%;
+    border-bottom: 1px solid Black;
+    border-left-color: Black;
+    border-left-width: 1px;
+    border-right-color: Black;
+    border-right-width: 1px;
+    border-top-color: Black;
+    border-top-width: 1px;
+    margin: 0;
+    text-align:center; 
+    padding: 0px 0px 0px 3px;         
+    vertical-align: top;
+    white-space: normal;
+}
+.CheckboxTableRow
+{
+    height: 100%;
+    white-space:normal;
+}
+.TableHeaderStyle
+{
+    width: 100%;
+    height: 40px;
+    padding:0;
+    margin:0;
+    white-space:normal;           
+}
+.StartPageTable
+{
+    border-right-color:Black;
+    border-right-style:solid;
+    border-right-width:1px;
+    width:50%;
+    white-space:normal;
+}
+.ButtonStyle
+{
+    border: 1px solid #507CD1;
+    background-color:White;
+    width: 100px;
+    font-family:Verdana;
+    font-size:0.8em;
+    color:#284E98;
+}
+.ButtonStyleWide
+{
+    border: 1px solid #507CD1;
+    width:155px;
+    background-color:White;
+    font-family:Verdana;
+    font-size:0.8em;
+    color:#284E98;
+}
+.NavigationMenu
+{
+    border-top-color:Black;
+    border-top-style:solid;
+    border-top-width:1px;
+    border-bottom-color:Black;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+    text-align:right;
+    padding:3px;
+}
+.Footer
+{
+    border-top-color:Black;
+    border-top-style:solid;
+    border-top-width:1px;
+    text-align:right;
+    padding:3px;
+}
+.grouptext
+{
+    color:Black;
+}
+.style10
+{
+    width: 316px;
+    height: 126px;
+}
+.style11
+{
+    width: 315px;
+    height: 126px;
+}
+.tlb
+{
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    border-left: solid 1px black;
+    text-align: left;
+    border-bottom: solid 1px black;
+    border-left: solid 1px black;
+}
+.lrb
+{   
+    border-bottom: solid 1px black;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+}        
+.ToolTipDiv
+{
+    float :left ;
+    font-weight: bold ; 
+    color :Blue ; 
+    padding-left:3px; 
+    padding-right :5px;
+} 
+.whitetext
+{
+    text-align:left;
+    white-space:normal;
+}
+.cellborder
+{
+    border-color: black;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    margin: 0;
+    padding: 4px;
+    background-color: #EFF3FB; 
+    text-align:left;
+    white-space:normal;
+}
+.tableborder
+{
+    border-color: black;
+    border-width: 0 0 0px 0px;
+    border-style: solid;
+}
+.listalign
+{
+    vertical-align:top;
+    text-align:left;
+    width:100%;
+    height:100%;
+    white-space:normal;
+    margin:0;
+    padding:0;
+}
+.editingBackgroundColor
+{
+    background-color: #FFFFFF; 
+}
+.Warning
+{
+    color:Highlight; 
+    font-size:large
+}
+.gridview
+{
+    border: 1px,solid,Black;
+    font-family:Arial;
+    font-size:small;
+    font-style:normal;
+    width:92%;
+}
+     
+.gridviewHeader
+{
+    background-color:#BFE4FF;
+    font-weight:bold;
+}   
+      
+.gridviewAlternateRowStyle
+{
+    background-color:#EFF3FB;
+          
+}
+.floatright
+{
+    float:right;
+    height: 16px;
+}
+            
+.relinquish
+{
+           
+    background-color:#BFE4FF;
+    font-size:Medium;
+    border-style:solid;
+}
+
+/*===================  MENU ==============================================*/
+
+/*Master*/
+div#menu {
+    height:28px;
+}
+
+div#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+}
+div#menu ul.menu {
+    padding-left: 10px;
+}
+
+div#menu li {
+    position: relative;
+    z-index: 9;
+    margin: 0;
+    padding: 0 5px 0 0;
+    display: block;
+    float: left;
+}
+div#menu li:hover>ul {
+    left: -1px;
+}
+
+div#menu a {
+    position: relative;
+    z-index: 10;
+    height: 28px;
+    display: block;
+    float: left;
+    line-height: 28px;
+    text-decoration: none;
+    font-family:Verdana;
+    font-size:0.8em;
+    font-weight:bold;   
+    color:Black;
+    width: 180px;
+    background-color:#EFF3FB;
+}
+div#menu a:hover, div#menu a:hover span { color:Black; background-color:Aqua; }
+div#menu li.current a {}
+
+div#menu span {
+    display: block;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+div#menu ul ul a.parent span {
+    background-position:95% 8px;
+}
+
+div#menu a {
+    /*padding: 0 10px 10px 10px;*/
+    background-color:#BFE4FF;
+}
+div#menu span {}
+div#menu li.last { background: none; }
+
+
+div#menu ul ul li { background: none; }
+div#menu ul ul {
+    position: absolute;
+    top: 27px;
+    left: -999em;
+    /*width: 200px;*/
+    padding: 5px;
+     background-color: #EFF3FB;
+    margin-top:1px;    
+    text-align : left;
+}
+div#menu ul ul a {
+    height: auto;
+    float: none;
+    display: block;
+    line-height: 24px;
+    border-style : solid;
+    border-width : thin;
+}
+div#menu ul ul span {
+    margin-top: 0;
+    padding-left: 15px;
+    _padding-left: 10px;
+       color:Highlight; 
+
+}
+div#menu ul ul a:hover span {
+    color:Black;
+    background-color:Aqua;
+}
+div#menu ul ul li.last { background: none; }
+div#menu ul ul li {
+    width: 100%;
+}
+    /*----------------------------------------------------------*/    
+    .MenuStyle
+{
+    width:100%;
+    height:30px;
+    font-family:normal;    
+    background-color:White;
+        border-bottom-style:solid;
+    border-bottom-width:thin;
+    border-bottom-color:gray;
+}
+    
+.selectedTab
+{
+    background-color:#3CC;
+    color:White;
+}
+
+.tab
+{
+    text-align:center; 
+    border-right-style:solid;
+    border-right-width:thin;
+    border-right-color:gray; 
+}
+
+.leftAlign
+{
+    text-align:left;
+    }
+
+.CommentsText
+{
+    height:50Px;
+    width: 450px;
+    }
+.leftcolumn
+{
+    width:160px;
+    text-align:left;
+    height:25px;
+    padding-left:12px;
+}
+   
+ .rightcolumn
+{
+    width:250px;
+    text-align:left;
+    border-right-style:groove;
+    border-bottom-style:groove;
+  
+}
+.datetxtbox
+{
+    width:70px;
+}
+           
+ .alertmessage
+{
+    font-weight:bold;
+    font-size:small;
+    color:#CC3300;
+}
+.tableCell
+{
+    text-align: left;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    white-space: normal;
+    font-family: verdana;
+    font-size: 10pt;
+    padding: 0;
+    margin: 0;
+    white-space: normal;
+    font-style: normal;
+}
+.GoGreenLegend
+{
+    padding:10px;
+    height:115px;
+    width:445px;
+    background-color:#CCFF99;
+    border-style:double;
+    float:right;
+    text-align:left;
+    }
+/*table 
+{
+
+  border-collapse: collapse;
+  border: solid 0px #e8eef4;
+  font: 11px/24px Verdana, Arial, Helvetica, sans-serif;
+}
+table td 
+{
+  padding: 5px;   
+  border: solid 0px #CCC;
+}
+
+table th
+{
+    padding: 6px 5px;
+    text-align : left;
+    border: solid 0px #CCC;
+}*/

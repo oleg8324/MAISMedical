@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://maisws.devlapps2.mrdd1.ad.mr.state.oh.us/MAIS_DODD_WCF1.xsd" namespace="http://schemas.datacontract.org/2004/07/MAIS_DODD_WCF.DTO" />
+  <xs:element name="GetRNData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="firstname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RnlicenseNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRNDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/MAIS_DODD_WCF.DTO" minOccurs="0" name="GetRNDataResult" nillable="true" type="q1:ArrayOfRNDetailInformation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDDData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DDpersonnelCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SSN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lastname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="firstname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="EmployerName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDDDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/MAIS_DODD_WCF.DTO" minOccurs="0" name="GetDDDataResult" nillable="true" type="q2:ArrayOfDDDetailInformation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrainingSessionData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionStartDate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sessionEndDate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="county" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="firstname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rnsession" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrainingSessionDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/MAIS_DODD_WCF.DTO" minOccurs="0" name="GetTrainingSessionDataResult" nillable="true" type="q3:ArrayOfTrainingSessionResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

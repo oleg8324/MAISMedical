@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UserService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://doddsvc.devlds.mrdd1.ad.mr.state.oh.us/Security/UserService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://doddsvc.devlds.mrdd1.ad.mr.state.oh.us/Security/UserService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://doddsvc.devlds.mrdd1.ad.mr.state.oh.us/Security/UserService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://doddsvc.devlds.mrdd1.ad.mr.state.oh.us/Security/UserService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/DODDSVC.DTO" />
+      <xsd:import schemaLocation="http://doddsvc.devlds.mrdd1.ad.mr.state.oh.us/Security/UserService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/DODDSVC.Enums" />
+      <xsd:import schemaLocation="http://doddsvc.devlds.mrdd1.ad.mr.state.oh.us/Security/UserService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/DODDSVC" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IUserService_GetUsersByRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersByRole" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_GetUsersByRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersByRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_GetUsersByUserGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersByUserGroup" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_GetUsersByUserGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersByUserGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_GetUsersByUserType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersByUserType" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_GetUsersByUserType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersByUserTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_GetUsersByProviderType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersByProviderType" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_GetUsersByProviderType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersByProviderTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_GetProviderUserInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProviderUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_GetProviderUserInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProviderUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_GetBillingAgentUserInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBillingAgentUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_GetBillingAgentUserInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBillingAgentUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_GetUserIdByUserCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserIdByUserCode" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_GetUserIdByUserCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserIdByUserCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_CreateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUser" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_CreateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_CreatePassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePassword" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_CreatePassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_SendEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendEmail" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_SendEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_CognosChangeUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:CognosChangeUser" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_CognosChangeUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CognosChangeUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_CognosAddUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:CognosAddUser" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_CognosAddUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CognosAddUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_CognosDisableUserAcct_InputMessage">
+    <wsdl:part name="parameters" element="tns:CognosDisableUserAcct" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_CognosDisableUserAcct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CognosDisableUserAcctResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_CognosEnableUserAcct_InputMessage">
+    <wsdl:part name="parameters" element="tns:CognosEnableUserAcct" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_CognosEnableUserAcct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CognosEnableUserAcctResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IUserService">
+    <wsdl:operation name="GetUsersByRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/GetUsersByRole" message="tns:IUserService_GetUsersByRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/GetUsersByRoleResponse" message="tns:IUserService_GetUsersByRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersByUserGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/GetUsersByUserGroup" message="tns:IUserService_GetUsersByUserGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/GetUsersByUserGroupResponse" message="tns:IUserService_GetUsersByUserGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersByUserType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/GetUsersByUserType" message="tns:IUserService_GetUsersByUserType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/GetUsersByUserTypeResponse" message="tns:IUserService_GetUsersByUserType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersByProviderType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/GetUsersByProviderType" message="tns:IUserService_GetUsersByProviderType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/GetUsersByProviderTypeResponse" message="tns:IUserService_GetUsersByProviderType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProviderUserInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/GetProviderUserInfo" message="tns:IUserService_GetProviderUserInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/GetProviderUserInfoResponse" message="tns:IUserService_GetProviderUserInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBillingAgentUserInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/GetBillingAgentUserInfo" message="tns:IUserService_GetBillingAgentUserInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/GetBillingAgentUserInfoResponse" message="tns:IUserService_GetBillingAgentUserInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserIdByUserCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/GetUserIdByUserCode" message="tns:IUserService_GetUserIdByUserCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/GetUserIdByUserCodeResponse" message="tns:IUserService_GetUserIdByUserCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/CreateUser" message="tns:IUserService_CreateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/CreateUserResponse" message="tns:IUserService_CreateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/CreatePassword" message="tns:IUserService_CreatePassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/CreatePasswordResponse" message="tns:IUserService_CreatePassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/SendEmail" message="tns:IUserService_SendEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/SendEmailResponse" message="tns:IUserService_SendEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CognosChangeUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/CognosChangeUser" message="tns:IUserService_CognosChangeUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/CognosChangeUserResponse" message="tns:IUserService_CognosChangeUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CognosAddUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/CognosAddUser" message="tns:IUserService_CognosAddUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/CognosAddUserResponse" message="tns:IUserService_CognosAddUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CognosDisableUserAcct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/CognosDisableUserAcct" message="tns:IUserService_CognosDisableUserAcct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/CognosDisableUserAcctResponse" message="tns:IUserService_CognosDisableUserAcct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CognosEnableUserAcct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/CognosEnableUserAcct" message="tns:IUserService_CognosEnableUserAcct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/CognosEnableUserAcctResponse" message="tns:IUserService_CognosEnableUserAcct_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IUserService" type="tns:IUserService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUsersByRole">
+      <soap:operation soapAction="http://tempuri.org/IUserService/GetUsersByRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersByUserGroup">
+      <soap:operation soapAction="http://tempuri.org/IUserService/GetUsersByUserGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersByUserType">
+      <soap:operation soapAction="http://tempuri.org/IUserService/GetUsersByUserType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersByProviderType">
+      <soap:operation soapAction="http://tempuri.org/IUserService/GetUsersByProviderType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProviderUserInfo">
+      <soap:operation soapAction="http://tempuri.org/IUserService/GetProviderUserInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBillingAgentUserInfo">
+      <soap:operation soapAction="http://tempuri.org/IUserService/GetBillingAgentUserInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserIdByUserCode">
+      <soap:operation soapAction="http://tempuri.org/IUserService/GetUserIdByUserCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUser">
+      <soap:operation soapAction="http://tempuri.org/IUserService/CreateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePassword">
+      <soap:operation soapAction="http://tempuri.org/IUserService/CreatePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmail">
+      <soap:operation soapAction="http://tempuri.org/IUserService/SendEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CognosChangeUser">
+      <soap:operation soapAction="http://tempuri.org/IUserService/CognosChangeUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CognosAddUser">
+      <soap:operation soapAction="http://tempuri.org/IUserService/CognosAddUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CognosDisableUserAcct">
+      <soap:operation soapAction="http://tempuri.org/IUserService/CognosDisableUserAcct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CognosEnableUserAcct">
+      <soap:operation soapAction="http://tempuri.org/IUserService/CognosEnableUserAcct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UserService">
+    <wsdl:port name="BasicHttpBinding_IUserService" binding="tns:BasicHttpBinding_IUserService">
+      <soap:address location="http://doddsvc.devlds.mrdd1.ad.mr.state.oh.us/Security/UserService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

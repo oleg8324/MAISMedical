@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MAIS_DODD_WCF.DTO" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MAIS_DODD_WCF.DTO" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfRNDetailInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RNDetailInformation" nillable="true" type="tns:RNDetailInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRNDetailInformation" nillable="true" type="tns:ArrayOfRNDetailInformation" />
+  <xs:complexType name="RNDetailInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CertificateDetails" nillable="true" type="tns:ArrayOfCertificateDetails" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RNLicenseNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RNDetailInformation" nillable="true" type="tns:RNDetailInformation" />
+  <xs:complexType name="ArrayOfDDDetailInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DDDetailInformation" nillable="true" type="tns:DDDetailInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDDDetailInformation" nillable="true" type="tns:ArrayOfDDDetailInformation" />
+  <xs:complexType name="DDDetailInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CertificateDetails" nillable="true" type="tns:ArrayOfCertificateDetails" />
+      <xs:element minOccurs="0" name="DDPersonnelCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOB" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DDDetailInformation" nillable="true" type="tns:DDDetailInformation" />
+  <xs:complexType name="ArrayOfCertificateDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CertificateDetails" nillable="true" type="tns:CertificateDetails" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCertificateDetails" nillable="true" type="tns:ArrayOfCertificateDetails" />
+  <xs:complexType name="CertificateDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ConsectiveRenewals" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CurrentStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EffectiveDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExpirationDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RoleDescription" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CertificateDetails" nillable="true" type="tns:CertificateDetails" />
+  <xs:complexType name="ArrayOfTrainingSessionResults">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrainingSessionResults" nillable="true" type="tns:TrainingSessionResults" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrainingSessionResults" nillable="true" type="tns:ArrayOfTrainingSessionResults" />
+  <xs:complexType name="TrainingSessionResults">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="County" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CourseCategory" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EndDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OBNNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RNTrainerEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RNTrainerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrainingSessionResults" nillable="true" type="tns:TrainingSessionResults" />
+</xs:schema>

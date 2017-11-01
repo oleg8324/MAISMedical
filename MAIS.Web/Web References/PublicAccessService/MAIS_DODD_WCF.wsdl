@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MAIS_DODD_WCF" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://maisws.devlapps2.mrdd1.ad.mr.state.oh.us/MAIS_DODD_WCF.xsd" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://maisws.devlapps2.mrdd1.ad.mr.state.oh.us/MAIS_DODD_WCF1.xsd" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMAIS_DODD_WCF_GetRNData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRNData" />
+  </wsdl:message>
+  <wsdl:message name="IMAIS_DODD_WCF_GetRNData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRNDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMAIS_DODD_WCF_GetDDData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDDData" />
+  </wsdl:message>
+  <wsdl:message name="IMAIS_DODD_WCF_GetDDData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDDDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMAIS_DODD_WCF_GetTrainingSessionData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrainingSessionData" />
+  </wsdl:message>
+  <wsdl:message name="IMAIS_DODD_WCF_GetTrainingSessionData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrainingSessionDataResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMAIS_DODD_WCF">
+    <wsdl:operation name="GetRNData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMAIS_DODD_WCF/GetRNData" message="tns:IMAIS_DODD_WCF_GetRNData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMAIS_DODD_WCF/GetRNDataResponse" message="tns:IMAIS_DODD_WCF_GetRNData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDDData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMAIS_DODD_WCF/GetDDData" message="tns:IMAIS_DODD_WCF_GetDDData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMAIS_DODD_WCF/GetDDDataResponse" message="tns:IMAIS_DODD_WCF_GetDDData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingSessionData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMAIS_DODD_WCF/GetTrainingSessionData" message="tns:IMAIS_DODD_WCF_GetTrainingSessionData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMAIS_DODD_WCF/GetTrainingSessionDataResponse" message="tns:IMAIS_DODD_WCF_GetTrainingSessionData_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MAIS_DODD_WCF.MAIS_DODD_WCF" type="tns:IMAIS_DODD_WCF">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRNData">
+      <soap:operation soapAction="http://tempuri.org/IMAIS_DODD_WCF/GetRNData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDDData">
+      <soap:operation soapAction="http://tempuri.org/IMAIS_DODD_WCF/GetDDData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingSessionData">
+      <soap:operation soapAction="http://tempuri.org/IMAIS_DODD_WCF/GetTrainingSessionData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MAIS_DODD_WCF">
+    <wsdl:port name="MAIS_DODD_WCF.MAIS_DODD_WCF" binding="tns:MAIS_DODD_WCF.MAIS_DODD_WCF">
+      <soap:address location="http://maisws.devlapps2.mrdd1.ad.mr.state.oh.us/MAIS_DODD_WCF.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

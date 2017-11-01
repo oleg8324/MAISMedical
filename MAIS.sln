@@ -1,0 +1,108 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{9C7833D4-5EF3-4FB2-B5AD-AB8C478E88B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{E865547C-99CB-403D-9476-21460339F581}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B9BFC79D-95EA-4697-9D86-32302F41AD0D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{C951B153-5B2F-4019-BB8E-6B257D86CB80}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MAIS.Web", "MAIS.Web\MAIS.Web.vbproj", "{93FAD7EB-A0A1-431F-BD56-82F306EB861A}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MAIS.Business", "MAIS.Business\MAIS.Business.vbproj", "{09C021C7-B854-44F8-A519-C1245D836F43}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MAIS.Data", "MAIS.Data\MAIS.Data.vbproj", "{F1274667-2B65-4F1E-ADB3-7E8D7FAF049E}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MAIS.Logging", "MAIS.Logging\MAIS.Logging.vbproj", "{5FD41D54-E31B-4596-8E8D-83AEDBCCC2B3}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MAIS.UnitTests", "MAIS.UnitTests\MAIS.UnitTests.vbproj", "{7A0D5302-E1BC-4CE7-82E9-F517B09E19D0}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MAIS.Web.Controls", "MAIS.Web.Controls\MAIS.Web.Controls.vbproj", "{436AB142-DF16-48EA-999D-230AFF79503D}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MAIS_DODD_WCF", "MAIS_WS\MAIS_DODD_WCF\MAIS_DODD_WCF.vbproj", "{0C10B3FE-87B1-4586-A0EA-5762491EF7CB}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://doddprodtfs01:8080/tfs/tfs08
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MAIS.Web\\MAIS.Web.vbproj
+		SccProjectTopLevelParentUniqueName1 = MAIS.sln
+		SccProjectName1 = MAIS.Web
+		SccLocalPath1 = MAIS.Web
+		SccProjectUniqueName2 = MAIS.Business\\MAIS.Business.vbproj
+		SccProjectTopLevelParentUniqueName2 = MAIS.sln
+		SccProjectName2 = MAIS.Business
+		SccLocalPath2 = MAIS.Business
+		SccProjectUniqueName3 = MAIS.Data\\MAIS.Data.vbproj
+		SccProjectTopLevelParentUniqueName3 = MAIS.sln
+		SccProjectName3 = MAIS.Data
+		SccLocalPath3 = MAIS.Data
+		SccProjectUniqueName4 = MAIS.Logging\\MAIS.Logging.vbproj
+		SccProjectTopLevelParentUniqueName4 = MAIS.sln
+		SccProjectName4 = MAIS.Logging
+		SccLocalPath4 = MAIS.Logging
+		SccProjectUniqueName5 = MAIS.UnitTests\\MAIS.UnitTests.vbproj
+		SccProjectTopLevelParentUniqueName5 = MAIS.sln
+		SccProjectName5 = MAIS.UnitTests
+		SccLocalPath5 = MAIS.UnitTests
+		SccProjectUniqueName6 = MAIS.Web.Controls\\MAIS.Web.Controls.vbproj
+		SccProjectTopLevelParentUniqueName6 = MAIS.sln
+		SccProjectName6 = MAIS.Web.Controls
+		SccLocalPath6 = MAIS.Web.Controls
+		SccProjectUniqueName7 = MAIS_WS\\MAIS_DODD_WCF\\MAIS_DODD_WCF.vbproj
+		SccProjectName7 = MAIS_WS/MAIS_DODD_WCF
+		SccLocalPath7 = MAIS_WS\\MAIS_DODD_WCF
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Provider.Certification.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93FAD7EB-A0A1-431F-BD56-82F306EB861A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93FAD7EB-A0A1-431F-BD56-82F306EB861A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93FAD7EB-A0A1-431F-BD56-82F306EB861A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93FAD7EB-A0A1-431F-BD56-82F306EB861A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09C021C7-B854-44F8-A519-C1245D836F43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C021C7-B854-44F8-A519-C1245D836F43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C021C7-B854-44F8-A519-C1245D836F43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C021C7-B854-44F8-A519-C1245D836F43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1274667-2B65-4F1E-ADB3-7E8D7FAF049E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1274667-2B65-4F1E-ADB3-7E8D7FAF049E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1274667-2B65-4F1E-ADB3-7E8D7FAF049E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1274667-2B65-4F1E-ADB3-7E8D7FAF049E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FD41D54-E31B-4596-8E8D-83AEDBCCC2B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FD41D54-E31B-4596-8E8D-83AEDBCCC2B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FD41D54-E31B-4596-8E8D-83AEDBCCC2B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FD41D54-E31B-4596-8E8D-83AEDBCCC2B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A0D5302-E1BC-4CE7-82E9-F517B09E19D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A0D5302-E1BC-4CE7-82E9-F517B09E19D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A0D5302-E1BC-4CE7-82E9-F517B09E19D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A0D5302-E1BC-4CE7-82E9-F517B09E19D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{436AB142-DF16-48EA-999D-230AFF79503D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{436AB142-DF16-48EA-999D-230AFF79503D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{436AB142-DF16-48EA-999D-230AFF79503D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{436AB142-DF16-48EA-999D-230AFF79503D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C10B3FE-87B1-4586-A0EA-5762491EF7CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C10B3FE-87B1-4586-A0EA-5762491EF7CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C10B3FE-87B1-4586-A0EA-5762491EF7CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C10B3FE-87B1-4586-A0EA-5762491EF7CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{09C021C7-B854-44F8-A519-C1245D836F43} = {9C7833D4-5EF3-4FB2-B5AD-AB8C478E88B0}
+		{F1274667-2B65-4F1E-ADB3-7E8D7FAF049E} = {9C7833D4-5EF3-4FB2-B5AD-AB8C478E88B0}
+		{93FAD7EB-A0A1-431F-BD56-82F306EB861A} = {E865547C-99CB-403D-9476-21460339F581}
+		{436AB142-DF16-48EA-999D-230AFF79503D} = {E865547C-99CB-403D-9476-21460339F581}
+		{7A0D5302-E1BC-4CE7-82E9-F517B09E19D0} = {B9BFC79D-95EA-4697-9D86-32302F41AD0D}
+		{5FD41D54-E31B-4596-8E8D-83AEDBCCC2B3} = {C951B153-5B2F-4019-BB8E-6B257D86CB80}
+	EndGlobalSection
+EndGlobal

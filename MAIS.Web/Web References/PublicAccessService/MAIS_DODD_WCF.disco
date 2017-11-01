@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://maisws.devlapps2.mrdd1.ad.mr.state.oh.us/MAIS_DODD_WCF.wsdl" docRef="http://maisws.devlapps2.mrdd1.ad.mr.state.oh.us/MAIS_DODD_WCF.svc" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+</discovery>

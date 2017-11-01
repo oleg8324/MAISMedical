@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{09C021C7-B854-44F8-A519-C1245D836F43}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MAIS.Business</RootNamespace>
+    <AssemblyName>MAIS.Business</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/Provider.Certification.BusinessLayer/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MAIS.Business.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <WarningsAsErrors>42105,42106,42107,42353,42354,42355</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MAIS.Business.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <WarningsAsErrors>42105,42106,42107,42353,42354,42355</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DODDSRC">
+      <HintPath>..\..\Libs\DODDSRC\DODDSRC.dll</HintPath>
+    </Reference>
+    <Reference Include="evohtmltopdf">
+      <HintPath>..\..\Libs\EvoHtmlToPdf\evohtmltopdf.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\Libs\itextsharp\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ODMRDDHelperClassLibrary, Version=1.1.3.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\ODMRDDHelperClassLibrary\ODMRDDHelperClassLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="ODMRDD_NET2, Version=2.0.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\ODMRDD_NET2\ODMRDD_NET2.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\..\Libs\StructureMap\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bases\BusinessBase.vb" />
+    <Compile Include="Helpers\EnumHelper.vb" />
+    <Compile Include="Helpers\RegExHelper.vb" />
+    <Compile Include="Infrastructure\UserIdentity.vb" />
+    <Compile Include="Mapping\ApplicationHistoryMapping.vb" />
+    <Compile Include="Mapping\ApplicationInformationDetailsMapping.vb" />
+    <Compile Include="Mapping\AttestationPageMapping.vb" />
+    <Compile Include="Mapping\CertificateMapping.vb" />
+    <Compile Include="Mapping\CEUMapping.vb" />
+    <Compile Include="Mapping\DODDMessageMapping.vb" />
+    <Compile Include="Mapping\EmployerInformationMapping.vb" />
+    <Compile Include="Mapping\MAISDODDMapping.vb" />
+    <Compile Include="Mapping\MAISMapping.vb" />
+    <Compile Include="Mapping\MAISReportMapping.vb" />
+    <Compile Include="Mapping\ManageCousrePageMapping.vb" />
+    <Compile Include="Mapping\NotationMapping.vb" />
+    <Compile Include="Mapping\PersonalInfoMapping.vb" />
+    <Compile Include="Mapping\PersonCourseMapping.vb" />
+    <Compile Include="Mapping\ResourceMapping.vb" />
+    <Compile Include="Mapping\RNDDRoleMapping.vb" />
+    <Compile Include="Mapping\RN_DetailsMapping.vb" />
+    <Compile Include="Mapping\SearchMapping.vb" />
+    <Compile Include="Mapping\SkillsPageMapping.vb" />
+    <Compile Include="Mapping\StartPageMapping.vb" />
+    <Compile Include="Mapping\SummaryMapping.vb" />
+    <Compile Include="Mapping\TrainingSkillsPageMapping.vb" />
+    <Compile Include="Mapping\UploadMapping.vb" />
+    <Compile Include="Mapping\User_RN_Mapping_Mapping.vb" />
+    <Compile Include="Mapping\WorkExperienceMapping.vb" />
+    <Compile Include="Model\AddressControlDetails.vb" />
+    <Compile Include="Model\ApplicationHistoryModel.vb" />
+    <Compile Include="Model\ApplicationHistorySearchCriteria.vb" />
+    <Compile Include="Model\ApplicationInformationDetails.vb" />
+    <Compile Include="Model\CategoryDetails.vb" />
+    <Compile Include="Model\CertificateDDInfo.vb" />
+    <Compile Include="Model\CertificateDetails.vb" />
+    <Compile Include="Model\CertificateInfo.vb" />
+    <Compile Include="Model\CertificationDetails.vb" />
+    <Compile Include="Model\CertificationEligibleInfo.vb" />
+    <Compile Include="Model\CEUDetails.vb" />
+    <Compile Include="Model\CourseDetails.vb" />
+    <Compile Include="Model\DDDetailInformation.vb" />
+    <Compile Include="Model\DDPersonnelDetails.vb" />
+    <Compile Include="Model\DDPersonnelSearchResult.vb" />
+    <Compile Include="Model\DocumentUpload.vb" />
+    <Compile Include="Model\DODDMessageInfo.vb" />
+    <Compile Include="Model\DODDMessageInfoMaisRNDDPerson.vb" />
+    <Compile Include="Model\DODDMessageInfoMaisRoles.vb" />
+    <Compile Include="Model\EmailAddressDetails.vb" />
+    <Compile Include="Model\EmployerDetails.vb" />
+    <Compile Include="Model\EmployerInformationDetails.vb" />
+    <Compile Include="Model\Enums.vb" />
+    <Compile Include="Model\LevelsDetails.vb" />
+    <Compile Include="Model\MAISApplicationDetails.vb" />
+    <Compile Include="Model\MAISReportDetails.vb" />
+    <Compile Include="Model\MAISRNDDRoleDetails.vb" />
+    <Compile Include="Model\MAISSearchCriteria.vb" />
+    <Compile Include="Model\NotationDetails.vb" />
+    <Compile Include="Model\PageModel.vb" />
+    <Compile Include="Model\PersonalInformationDetails.vb" />
+    <Compile Include="Model\PersonCourse.vb" />
+    <Compile Include="Model\PhoneDetails.vb" />
+    <Compile Include="Model\Resource.vb" />
+    <Compile Include="Model\RNInformationDetails.vb" />
+    <Compile Include="Model\RNInformationDetailsForWS.vb" />
+    <Compile Include="Model\RNSearchResult.vb" />
+    <Compile Include="Model\RN_AttestationEntity.vb" />
+    <Compile Include="Model\RN_AttestationPanel.vb" />
+    <Compile Include="Model\RN_AttestationQuestions.vb" />
+    <Compile Include="Model\RN_DD_Flags.vb" />
+    <Compile Include="Model\RN_Mapping.vb" />
+    <Compile Include="Model\RN_UserDetails.vb" />
+    <Compile Include="Model\RoleCategoryLevelDetails.vb" />
+    <Compile Include="Model\Secretary_Association.vb" />
+    <Compile Include="Model\SessionAddress.vb" />
+    <Compile Include="Model\SessionAddressInformation.vb" />
+    <Compile Include="Model\SessionCourseInfoDetails.vb" />
+    <Compile Include="Model\SessionDetails.vb" />
+    <Compile Include="Model\SessionInformationDetails.vb" />
+    <Compile Include="Model\SkillCheckListDetails.vb" />
+    <Compile Include="Model\SkillDetails.vb" />
+    <Compile Include="Model\SkillsVerificationDetails.vb" />
+    <Compile Include="Model\SummaryModel.vb" />
+    <Compile Include="Model\SupervisorDetails.vb" />
+    <Compile Include="Model\UserMappingDetails.vb" />
+    <Compile Include="Model\WorkExperienceDetails.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Rules\AddressRules.vb" />
+    <Compile Include="Rules\DocumentUploadRules.vb" />
+    <Compile Include="Rules\PageCompletionRules.vb" />
+    <Compile Include="Rules\WorkExperienceRules.vb" />
+    <Compile Include="Service References\CBOSSWebService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ApplicationDetailInformationService.vb" />
+    <Compile Include="Services\ApplicationHistoryService.vb" />
+    <Compile Include="Services\CertificateService.vb" />
+    <Compile Include="Services\DocumentService.vb" />
+    <Compile Include="Services\DODDMessagePageService.vb" />
+    <Compile Include="Services\EmailService.vb" />
+    <Compile Include="Services\EmployerInformationService.vb" />
+    <Compile Include="Services\MAISDODDService.vb" />
+    <Compile Include="Services\MAISSerivce.vb" />
+    <Compile Include="Services\MAISReportService.vb" />
+    <Compile Include="Services\ManageCourseService.vb" />
+    <Compile Include="Services\MoveTempToPermService.vb" />
+    <Compile Include="Services\NotationService.vb" />
+    <Compile Include="Services\PersonalInformationService.vb" />
+    <Compile Include="Services\ResourcePageService.vb" />
+    <Compile Include="Services\RN_AttestationService.vb" />
+    <Compile Include="Services\SearchService.vb" />
+    <Compile Include="Services\SkillPageService.vb" />
+    <Compile Include="Services\StartPageService.vb" />
+    <Compile Include="Services\SummaryService.vb" />
+    <Compile Include="Services\TrainingSkillsPageService.vb" />
+    <Compile Include="Services\UploadService.vb" />
+    <Compile Include="Services\UserRNDetailService.vb" />
+    <Compile Include="Services\UserRNMappingService.vb" />
+    <Compile Include="Services\WorkExperienceService.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\CBOSSWebService\1.0.wsdl" />
+    <None Include="Service References\CBOSSWebService\1.0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CBOSSWebService\Cboss.DataTransferTokenizer.Application.Presentation.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CBOSSWebService\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CBOSSWebService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CBOSSWebService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CBOSSWebService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CBOSSWebService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MAIS.Data\MAIS.Data.vbproj">
+      <Project>{F1274667-2B65-4F1E-ADB3-7E8D7FAF049E}</Project>
+      <Name>MAIS.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MAIS.Logging\MAIS.Logging.vbproj">
+      <Project>{5FD41D54-E31B-4596-8E8D-83AEDBCCC2B3}</Project>
+      <Name>MAIS.Logging</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="evointernal.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

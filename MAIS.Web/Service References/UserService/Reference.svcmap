@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e1912097-c3dd-4ff6-bac5-be5c5b89177f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://doddsvc.devlds.mrdd1.ad.mr.state.oh.us/Security/UserService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UserService.xsd" MetadataType="Schema" ID="d40787a2-270d-4bcf-9483-e1e0b65fe253" SourceId="1" SourceUrl="http://doddsvc.devlds.mrdd1.ad.mr.state.oh.us/Security/UserService.svc?xsd=xsd2" />
+    <MetadataFile FileName="UserService1.xsd" MetadataType="Schema" ID="3172989a-ce44-4ec5-9ae7-e27888ded2c6" SourceId="1" SourceUrl="http://doddsvc.devlds.mrdd1.ad.mr.state.oh.us/Security/UserService.svc?xsd=xsd4" />
+    <MetadataFile FileName="UserService2.xsd" MetadataType="Schema" ID="09b677e6-3814-46f1-abcd-4deb6725aad4" SourceId="1" SourceUrl="http://doddsvc.devlds.mrdd1.ad.mr.state.oh.us/Security/UserService.svc?xsd=xsd5" />
+    <MetadataFile FileName="UserService.disco" MetadataType="Disco" ID="d4b68281-c359-41d2-bb2f-5d14e14a266e" SourceId="1" SourceUrl="http://doddsvc.devlds.mrdd1.ad.mr.state.oh.us/Security/UserService.svc?disco" />
+    <MetadataFile FileName="UserService3.xsd" MetadataType="Schema" ID="2ef1297b-d54b-4872-99d2-a6f1a4e30891" SourceId="1" SourceUrl="http://doddsvc.devlds.mrdd1.ad.mr.state.oh.us/Security/UserService.svc?xsd=xsd0" />
+    <MetadataFile FileName="UserService4.xsd" MetadataType="Schema" ID="19c3355a-5340-4ce7-8fba-18805417222a" SourceId="1" SourceUrl="http://doddsvc.devlds.mrdd1.ad.mr.state.oh.us/Security/UserService.svc?xsd=xsd1" />
+    <MetadataFile FileName="UserService5.xsd" MetadataType="Schema" ID="cf39870b-0df5-4bf5-a7e9-d1891cbd5a16" SourceId="1" SourceUrl="http://doddsvc.devlds.mrdd1.ad.mr.state.oh.us/Security/UserService.svc?xsd=xsd3" />
+    <MetadataFile FileName="UserService.wsdl" MetadataType="Wsdl" ID="30e9c778-8b38-4dcc-8e42-f9208b96fa45" SourceId="1" SourceUrl="http://doddsvc.devlds.mrdd1.ad.mr.state.oh.us/Security/UserService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

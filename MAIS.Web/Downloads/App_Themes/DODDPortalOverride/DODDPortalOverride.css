@@ -1,0 +1,53 @@
+﻿body 
+{
+    font-family:Arial !important;
+    color: #4E4E4E !important;
+    background-color: #EEEEEE  !important;
+   
+}
+
+div#msgScroller
+{
+    font-family:Arial !important;
+}
+
+#masterBody
+{
+    background-color: transparent !important;
+}
+
+div#masterleft input
+{
+     background-color: #EEEEEE  !important;
+}
+
+div#masterleft div
+{
+    font-size: 12px;
+}
+
+.masterHeader, #masterHeader
+{
+    display: none;
+}
+
+#HeaderRow
+{
+    display:none;
+}
+
+#MiddleRow
+{
+    background-color: #EEEEEE  !important;
+}
+
+.style12
+{
+    background-color: #EEEEEE  !important;
+}
+
+.HeaderImage
+{
+    display:none;
+}
+
